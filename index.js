@@ -1,6 +1,6 @@
 import express from 'express'
 
-const app = express;
+const app = express();
 
 const port = 3000;
 
@@ -13,7 +13,7 @@ app.get("/", (req,res)=>{
     const name = "DevAshura"
 
     const agent = 700;
-    res.render("index.ejs", {
+    res.render("/view/index.ejs", {
         k1 : name,
         v1 : agent
     })
