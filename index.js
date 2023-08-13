@@ -13,5 +13,8 @@ app.get("/", (req,res)=>{
     const name = "DevAshura"
 
     const agent = 700;
-    res.render()
+    res.render("index.ejs", {
+        k1 : name,
+        v1 : agent
+    })
 })
